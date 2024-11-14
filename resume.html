@@ -13,7 +13,7 @@
     <title>My Resume</title>
 </head>
 <body>
-
+      <main class="grid">
         <nav>
             <a class="logo" href=""></a>
             <ul>
@@ -41,75 +41,10 @@
           <dd itemprop="nationality">United States</dd>
           <dt>Location</dt>
           <dd itemprop="homeLocation">Arkansas</dd>
-          <dt>Telephone</dt>
-          <dd>
-            <a itemprop="telephone" href="tel:501.772.7232">501.772.7232</a>
-          </dd>
           <dt>Email</dt>
-          <dd>
-            <a itemprop="email" href="mailto:jewarwick03@gmail.com">jewarwick03@gmail.com</a>
-          </dd>
+          <dd>jewarwick03@gmail.com</dd>
         </dl>
-
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Wordpress</li>
-            </ul>
-
-            <h2>Experience</h2>
-            <!-- current job -->
-            <article class="job">
-              <h3 itemprop="jobTitle">Office Administration</h3>
-              <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-                <span itemprop="name">Fence World</span>
-                <span>August 2023 - Present</span>
-                <p itemprop="description">Office management work such as, creating invoices, checking voicemails, document organization, ect.</p>
-                <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-                  <a itemprop="url" href="https://www.fenceworldar.com/">Company URL</a>
-                  <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                  <span itemprop="addressLocality">Mabelvale, AR</span>
-                </span>
-                </span>
-              </div>
-            </article>
-            <!-- Previous Jobs - Notice Slightly Different Format-->
-            <article class="job no-border-bottom" itemscope itemtype="http://schema.org/Organization">
-              <h3 itemprop="name">Retail employee</h3>
-              <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-                  <span itemprop="name">Sanders Ace Hardware</span>
-              <a itemprop="url" href="https://www.acehardware.com/">Company URL</a>
-              <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="addressLocality">Little Rock, AR</span>
-              </span>
-              </span>
-              <div itemscope itemtype="https://schema.org/EmployeeRole">
-              <span itemprop="startDate" content="2006-02-21T20:00">August 2021</span> - 
-              <span itemprop="endDate" content="2009-02-21T20:00">August 2023</span>
-              </div>
-              <p itemprop="description">Customer assistance, running register on occasion, stocking inventory, ect.</p>
-            </article>
-
         </section>
-  
-          
-          <section id="education">
-            <h2>Education</h2>
-            <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-              <h3 itemprop="description"><abbr title="Master of Science">BA</abbr> Web Design and Development</h3>
-              <span itemprop="name">University of Arkansas at Little Rock</span>
-              <span itemprop="location" itemscope>Little Rock, AR</span>
-              <span>Fall 2023-Current</span>
-            </article>
-            <article class="certificate no-border-bottom" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
-              <h3 itemprop="description"><abbr title="Master of Science">AS</abbr> Liberal Arts & Sciences</h3>
-              <span itemprop="name">University of Arkansas - Pulaski Technical College</span>
-              <span itemprop="location" itemscope>North Little Rock, AR</span>
-              <span>Fall 2021-Spring 2023</span>
-            </article>
-          </section>
 
         <footer class="primary">
             <ul id="links">
@@ -117,6 +52,82 @@
                 <li><a rel="me" title="LinkedIn" href="https://www.linkedin.com/in/joel-warwick-0a8b94295/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #454545;"></i></a></li>
             </ul>
         </footer>
+      </main>
+
+      <section id="skills" class="resume-section">
+        <h2>Skills</h2>
+        <div class="skill">
+          <div class="skill-name">HTML</div>
+          <div class="skill-bar">
+            <div class="skill-per" per="90%" style="max-width:90%"></div> 
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">CSS</div>
+          <div class="skill-bar">
+            <div class="skill-per" per="70%" style="max-width:70%"></div> 
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-bar">
+            <div class="skill-per" per="40%" style="max-width:40%"></div> 
+          </div>
+        </div>        
+      </section>
+
+      <section id="education" class="resume-section">
+        <h2>Education</h2>
+        <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <h3 itemprop="description"><abbr title="Master of Science">BA</abbr> Web Design and Development</h3>
+          <span itemprop="name">University of Arkansas at Little Rock</span>
+          <span itemprop="location" itemscope>Little Rock, AR</span>
+          <span>Fall 2023-Current</span>
+        </article>
+        <article class="certificate no-border-bottom" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <h3 itemprop="description"><abbr title="Master of Science">AS</abbr> Liberal Arts & Sciences</h3>
+          <span itemprop="name">University of Arkansas - Pulaski Technical College</span>
+          <span itemprop="location" itemscope>North Little Rock, AR</span>
+          <span>Fall 2021-Spring 2023</span>
+        </article>
+      </section>
+
+      <section id="experience" class="resume-section">
+        <h2>Experience</h2>
+        <!-- current job -->
+        <article class="job">
+          <h3 itemprop="jobTitle">Office Administration</h3>
+          <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="name">Fence World</span>
+            <span>August 2023 - Present</span>
+            <p itemprop="description">Office management work such as, creating invoices, checking voicemails, document organization, ect.</p>
+            <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+              <a itemprop="url" href="https://www.fenceworldar.com/">Company URL</a>
+              <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="addressLocality">Mabelvale, AR</span>
+            </span>
+            </span>
+          </div>
+        </article>
+        <!-- Previous Jobs - Notice Slightly Different Format-->
+        <article class="job no-border-bottom" itemscope itemtype="http://schema.org/Organization">
+          <h3 itemprop="name">Retail employee</h3>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+              <span itemprop="name">Sanders Ace Hardware</span>
+          <a itemprop="url" href="https://www.acehardware.com/">Company URL</a>
+          <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="addressLocality">Little Rock, AR</span>
+          </span>
+          </span>
+          <div itemscope itemtype="https://schema.org/EmployeeRole">
+          <span itemprop="startDate" content="2006-02-21T20:00">August 2021</span> - 
+          <span itemprop="endDate" content="2009-02-21T20:00">August 2023</span>
+          </div>
+          <p itemprop="description">Customer assistance, running register on occasion, stocking inventory, ect.</p>
+        </article>
+      </section>
+
+<h2 class="resume-section"><a href="">PDF Resume Link</a></h2>
 
 
 </body>
