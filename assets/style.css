@@ -13,6 +13,7 @@ html {
     font-family: "Fahkwang", sans-serif;
     background-color: #454545;
     color: #DDDBCB;
+    overflow: hidden;
   }
 
   main.grid {
@@ -66,10 +67,13 @@ html {
 
 
   #content {
-    grid-column: 2 / span 5;
+    grid-column: 2 / span 6;
     grid-row: 2;
     align-self: center;
     color: #454545;
+    overflow-y: scroll;
+    max-height: 60vh;
+
 
     h1 {
         font-weight: 600;
@@ -193,3 +197,17 @@ dl.details {
 #skills h2{
     margin-top: 40px;
 }
+
+/* ----- Scroll Bar ----- */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #DDDBCB; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #454545; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
